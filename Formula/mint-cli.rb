@@ -9,10 +9,10 @@ class MintCli < Formula
   depends_on :macos
 
   def install
-    bin.install "mint"
+    bin.install "mint-cli"
   end
 
   test do
-    assert_match "Mint", shell_output("#{bin}/mint --help")
+    assert_match "Mint", shell_output("#{bin}/mint-cli --help")
   end
 end
